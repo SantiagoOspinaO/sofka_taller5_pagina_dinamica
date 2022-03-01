@@ -1,0 +1,31 @@
+head 
+  meta(charset='utf-8')
+  title Game Creation
+  link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css")
+  link(rel="stylesheet" href="/resources/css/createGame.css")
+
+
+  <main class="container p-5">
+    body 
+      <form action="/createGame" method="POST">
+      <p>
+        <font face='Time New Roman'>
+        h3.title <center> Creation of the game </center> 
+      </p>
+        div.form-group
+        <p>
+          <font size='3' face='Time New Roman'>
+          label(for='gamers') Player1:
+          input#players.form-control(value= "" type='name' placeholder='name player1' name='namePlayer', required, autofocus)
+        </p>
+        <p>
+          label(for='gamers') Player2:
+          input#players.form-control(value= "" type='name' placeholder='name player2' name='namePlayer', required)
+        </p>
+        <p>
+          label(for='gamers') Player3:
+          input#players.form-control(value= "" type='name' placeholder='name player3' name='namePlayer', required) 
+        </p>
+        button#submit.form-control.btn.btn-primary(type="sumit") Create Game  
+  </main>
+
